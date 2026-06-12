@@ -193,6 +193,7 @@ section{scroll-margin-top:calc(var(--header-h) + 22px)}
 .visual-context.split{display:grid;grid-template-columns:minmax(280px,.85fr) 1fr;align-items:stretch}.visual-context.reverse{grid-template-columns:1fr minmax(280px,.85fr)}
 .visual-media{position:relative;min-height:250px;background:#07101E;display:flex;align-items:center;justify-content:center;overflow:hidden}.visual-media img{width:100%;height:100%;object-fit:cover;display:block}.visual-media.contain{padding:14px;background:rgba(7,16,30,.96)}.visual-media.contain img{object-fit:contain;max-height:500px;border-radius:10px;box-shadow:0 12px 34px rgba(0,0,0,.26)}
 .visual-body{padding:22px 24px}.visual-body h3{font-size:1.18rem;margin-bottom:8px}.visual-body p{color:#C9D4E6}.visual-caption{border-top:1px solid rgba(245,245,240,.12);padding:11px 14px;color:#9FB0C7;font-size:.76rem;line-height:1.45;background:rgba(1,21,54,.42)}.visual-caption strong{color:#F5F5F0}.visual-link{display:inline-flex;align-items:center;justify-content:center;margin-top:10px;text-decoration:none;border:1px solid rgba(242,197,0,.38);color:#F2C500;background:rgba(242,197,0,.08);border-radius:999px;padding:8px 11px;font-size:.72rem;font-weight:900;letter-spacing:.07em;text-transform:uppercase}.visual-link:hover{background:rgba(242,197,0,.18);color:#fff}
+.hydros-infographic-card{background:rgba(7,16,30,.96)}.hydros-infographic-media{padding:0;min-height:auto;background:#fff}.hydros-infographic-media img{width:100%;height:auto;max-height:none;object-fit:contain;border-radius:0;box-shadow:none;background:#fff}.hydros-infographic-card .visual-caption{border-top:1px solid rgba(7,16,30,.14);background:rgba(1,21,54,.72);color:#D7E2F1}
 .visual-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;margin:24px 0}.mini-visual-card{border:1px solid rgba(245,245,240,.14);background:rgba(6,29,66,.78);border-radius:16px;overflow:hidden}.mini-visual-card .visual-media{min-height:170px}.mini-visual-card .visual-body{padding:16px}.mini-visual-card h4{margin:0 0 8px;color:#fff}.mini-visual-card p{font-size:.86rem;color:#B8C4D6;margin:0}.mini-visual-card .visual-caption{font-size:.7rem}
 .visual-fact-strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin:18px 0}.visual-fact{border:1px solid rgba(255,107,26,.28);border-left:4px solid var(--orange);border-radius:12px;background:rgba(255,107,26,.075);padding:14px}.visual-fact strong{display:block;color:#fff;font-size:1.03rem}.visual-fact span{display:block;color:#B8C4D6;font-size:.78rem;line-height:1.35;margin-top:4px}
 .document-snapshot-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin:24px 0}.doc-snapshot{border:1px solid rgba(245,245,240,.15);background:rgba(7,16,30,.76);border-radius:16px;overflow:hidden}.doc-snapshot .visual-media{min-height:360px}.doc-snapshot h4{padding:14px 16px 0;margin:0;color:#fff}.doc-snapshot p{padding:8px 16px 0;margin:0;color:#B8C4D6;font-size:.84rem}.doc-snapshot .visual-caption{margin-top:12px}
@@ -2281,16 +2282,10 @@ O dossiê não trabalha com suposições soltas. Trabalha com rastreabilidade: o
 <button class="section-nav-btn next" data-topic="snisb" type="button">Próximo tema</button>
 <button class="section-nav-btn all" data-show-all="true" type="button">Ver dossiê completo</button>
 </div>
-<div class="visual-context reverse">
-<div>
-<div class="visual-body">
-<h3>Laudo técnico como eixo probatório</h3>
-<p>O laudo Hydros 2021 é um dos documentos técnicos centrais, por apontar problemas operacionais e recomendações antes dos eventos de 2023 e da contratação posterior.</p>
-</div>
-<div class="visual-caption"><strong>Figura -</strong> Card técnico de apoio visual. Fonte: Laudo Hydros 2021, acervo documental do dossiê.</div>
-</div>
-<div class="visual-media contain"><div style="border:1px solid rgba(245,245,240,.2);border-radius:14px;padding:28px;width:90%;background:rgba(6,29,66,.92);text-align:left"><div style="color:#F2C500;font-family:IBM Plex Mono,monospace;font-weight:900;text-transform:uppercase">Hydros 2021</div><h3 style="margin:12px 0;color:#fff">Comportas · Energia · Gerador · Instrumentação</h3><p style="color:#B8C4D6;margin:0">Documento técnico central, com classificação de risco, achados e recomendações pendentes.</p></div></div>
-</div>
+<figure class="visual-context hydros-infographic-card">
+<div class="visual-media contain hydros-infographic-media"><img alt="Infográfico Diagnóstico de Segurança: Barragem Norte (2021), com achados do Laudo Hydros 2021" loading="lazy" src="https://raw.githubusercontent.com/dcamargoadvocacia-debug/vale-sob-alerta/main/vale-sob-alerta-assets/hydros-2021-diagnostico-seguranca-barragem-norte.png"></div>
+<figcaption class="visual-caption"><strong>Figura -</strong> Card técnico de apoio visual. Fonte: Laudo Hydros 2021, acervo documental do dossiê.</figcaption>
+</figure>
 </section>
 <section class="section reading-section is-hidden" data-reader-title="IDs oficiais e resultado formal: “Não atende”" id="snisb"><div class="section-label">SNISB · Cadastro nacional</div><h2>IDs oficiais e resultado formal: “Não atende”</h2>
 <div class="visual-context split">
